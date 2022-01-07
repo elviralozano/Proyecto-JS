@@ -1,0 +1,951 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+body {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.7;
+}
+
+* {
+    outline: none;
+}
+
+*:not(.slick-track):not(.slick-list) {
+    transition: 0.4s;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ac0257;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+button.rounded {
+    background: #ac0257;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+p.large-paragraph {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/*Sección inicio*/
+
+#header-hero-container {
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+header {
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 4px;
+}
+
+.icono-menu {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.icono-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#close-flyout {
+    display: none;
+}
+
+header ul li a {
+    color: #999;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header ul.is-sticky li a {
+    color: #000;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #fff;
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a.active {
+    color: #ac0257;
+}
+
+
+#hero {
+    background: url('./Recursos/Img/Librosinicio.jpg') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#hero .fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(52, 58, 64, 0.9);
+    z-index: 1;
+}
+
+#hero .hero-text {
+    position: absolute;
+    top: 50%;
+    margin: -75px auto 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+    width: 500px;
+    text-align: center;
+}
+
+#hero .hero-text p {
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+/* Sección 2*/
+
+#literatura-colombiana {
+    padding: 3rem 0;
+    background: #f8f9fa;
+    text-align: center;
+    color: #222;
+}
+
+#literatura-colombiana h2 {
+    margin-bottom: 3rem;
+}
+
+#literatura-colombiana .flex > div {
+    width: 30%;
+}
+
+#literatura-colombiana h4 {
+    color: #343a40;
+    margin-top: 1rem;
+}
+
+#literatura-colombiana span.fas {
+    color: #f5e506;
+    font-size: 35px;
+}
+.map-container{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#map{
+    margin: 0 auto;
+    height: 400px;
+    width: 80%;
+}
+/* Sección 3 - formulario - convocatoria*/
+
+.contact__container {
+    width: 70vw;
+    height: 120vh;
+    margin:  2rem auto;
+    display: block;
+    text-align: center;
+    }
+
+.contacto__description {
+    padding: 10px; };
+
+.contacto__title {
+    font-weight: 300px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    color: #e3b82d; }
+
+.contacto__text {
+    padding: .7em 0;
+    line-height: 1.5;
+    font-size: 22px;
+    color: #828585; }
+
+.contacto__questions {
+    position: relative;
+    margin: 25px; }
+
+.contacto__form {
+    background-color: #f8f7f7;
+    box-shadow: 0 0 2px #858282;
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    }
+
+
+.contacto__form input, textarea {
+        padding: 3px 3px 3px 2px;
+        display: block;
+        width: 100%;
+        line-height: 2rem;
+        background: none;
+        border: none;
+        border-bottom: 1px dotted #000;
+        resize: none; }
+
+.contacto__form input:active{
+    border-bottom: 1px solid #ac0257;
+}
+
+.contacto__form label {
+        color: #858282;
+        font-size: 12px;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        transition: 0.3s ease all; }
+
+@media screen and (min-width: 850px) {
+    .contacto .contacto__container {
+    flex-direction: row;
+    align-items: center;
+    height: 500px; } }
+
+.respuesta{
+        width: 200px;
+        text-align: center;
+        margin: auto;
+        color: #000000;
+        padding-top: 20px;
+    }
+
+/* Este catálogo será el e-commerce */
+
+#catalogue {
+    margin: 4rem 0 8rem;
+    position: relative;
+}
+
+#catalogue h2 {
+    margin-bottom: 3rem;
+}
+
+#catalogue .container {
+    position: relative;
+}
+
+#catalogue .container:before {
+    content: "/";
+    position: absolute;
+    right: 80px;
+    top: 18px;
+    color: #999;
+}
+
+#catalogue-slider a.slick-arrow {
+    color: #000;
+    position: absolute;
+    top: -78px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+#catalogue-slider a.slick-prev {
+    right: 80px;
+}
+
+#catalogue-slider .slick-slide {
+    padding: 0 15px;
+}
+
+#catalogue-slider img {
+    width: 100%;
+    display: block;
+}
+
+#catalogue-slider .catalogue-details {
+    padding: 1rem;
+}
+
+#catalogue-slider .price {
+    font-size: 1.2rem;
+    color: #343a40;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+}
+
+#catalogue-slider .catalogue-details span {
+    font-size: 0.8rem;
+    padding-right: 15px;
+}
+
+#catalogue-slider .catalogue-details span.type {
+    padding-left: 10px;
+}
+
+#catalogue-slider .catalogue-details span.rgn {
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+#catalogue-slider .catalogue-details span.writers,
+#catalogue-slider .catalogue-details span.type {
+    border-right: 1px solid #888;
+}
+
+#catalogue button.rounded {
+    display: block;
+    margin: 2rem auto 0;
+    width: 350px;
+}
+
+/* Sección 3 */
+#agents {
+    margin: 4rem 0 6rem;
+    padding: 0 0 6rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#agents p.large-paragraph {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+#agents .flex {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#agents .card {
+    width: 32%;
+    background: #ac0257;
+    margin-bottom: 2rem;
+}
+
+#agents .card img {
+    width: 100%;
+    height: 400px;
+}
+
+#agents .card h3 {
+    font-family: "Playfair Display", serif;
+    color: #fff;
+}
+
+#agents .card h3,
+#agents .card p {
+    padding-left: 1rem;
+}
+
+
+/* Sección 4 */
+#the-best {
+    margin: 2rem 0;
+}
+
+#the-best .flex > img {
+    width: 47%;
+}
+
+#the-best .flex > div {
+    width: 40%;
+}
+
+#the-best ul {
+    padding-left: 20px;
+    margin-bottom: 4rem;
+}
+
+#the-best ul li {
+    margin: 10px 0;
+}
+
+/* Sección 5 - cuestionario */
+.cuestionario {
+    width: 98vw;
+    height: 97vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.encabezado {
+    position: relative;
+    background: white;
+    min-width: 300px;
+    width: 70%;
+    max-width: 600px;
+    padding: 10px;
+    }
+
+.categoria {
+    opacity: 0.3;
+    text-align: left;
+    }
+
+.pregunta {
+    padding: 10px;
+    }
+
+.imagen {
+    object-fit: cover;
+    height: 0px;
+    width: 0px;
+    }
+
+.btn {
+    background: white;
+    width: 60%;
+    max-width: 550px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    }
+
+.btn:hover {
+    transform: scale(1.05);
+    }
+
+.numero{
+    position: absolute;
+    opacity:0.3;
+    top: 10px;
+    right: 10px;
+    }
+
+.puntaje{
+    padding:10px;
+    color:white;
+    }
+
+/* Sección 5 - Fragmentos */
+#testimonials {
+    margin-bottom: 8rem;
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+#testimonials-slider .slick-slide {
+    text-align: center;
+}
+
+#testimonials-slider blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 1rem auto 3rem;
+    max-width: 740px;
+}
+
+#testimonials-slider .testimonials-caption {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#testimonials-slider .testimonials-caption img {
+    float: left;
+    border-radius: 30px;
+    width: 60px;
+}
+
+.testimonials-caption p {
+    position: relative;
+    top: 13px;
+    font-size: 1.2rem;
+}
+
+#testimonials-slider .slick-arrow {
+    text-decoration: none;
+    position: absolute;
+    font-size: 40px;
+    color: #222;
+    top: 50%;
+    margin-top: -35px;
+    z-index: 1;
+}
+#testimonials-slider .slick-next {
+    right: 0;
+}
+
+
+/* Sección 6 - contacto/formulario */
+
+
+/* Footer */
+footer {
+    background: #ac0257;
+    padding: 8rem 0;
+    height: 250px;
+}
+
+footer .flex {
+    padding-bottom: 6rem;
+    border-bottom: 1px solid #777;
+}
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+footer h5.follow-us {
+    margin-top: 1rem;
+}
+
+footer .footer-about {
+    width: 47%;
+}
+
+footer .footer-about p {
+    width: 65%;
+}
+
+footer .footer-quick-links {
+    width: 16%;
+}
+
+footer .footer-quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-quick-links ul li {
+    margin: 10px 0;
+}
+
+footer .footer-quick-links ul li a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer .footer-quick-links ul li a:hover {
+    color: #fff;
+}
+
+footer .footer-subscribe {
+    width: 35%;
+}
+
+#subscribe-container {
+    position: relative;
+}
+
+footer .footer-subscribe input {
+    border-radius: 30px;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+footer button.right-rounded {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: #f69314;
+    font-size: 16px;
+    color: #000;
+    padding: 10px 30px 9px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+footer button.right-rounded:hover {
+    background: #fff;
+}
+
+footer .footer-subscribe ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-subscribe ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+footer .footer-subscribe ul li:first-child {
+    margin-left: 0;
+}
+
+footer .footer-subscribe ul li a {
+    text-decoration: none;
+    color: #777;
+}
+
+footer .footer-subscribe ul li a:hover {
+    color: #fff;
+}
+
+footer small {
+    margin-top: 3rem;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+}
+
+footer small a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer small a:hover {
+    color: #fff;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 991px) {
+    #logo {
+        top: 1px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #fff;
+        right: -100%;
+        top: 0;
+        margin: 0;
+        padding: 2rem;
+        height: 100%;
+        width: 300px;
+        box-sizing: border-box;
+        box-shadow: 5px 0 10px 3px #999;
+    }
+
+    #close-flyout {
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+        font-size: 30px;
+        color: #777;
+        cursor: pointer;
+        display: block;
+        line-height: 1;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav ul li:first-child {
+        margin-top: 50px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        color: #212529;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #f69314;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .large-paragraph {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    #hero .hero-text {
+        width: 400px;
+    }
+
+    #agents .card {
+        width: 49%;
+    }
+
+    #the-best .flex > img {
+        display: none;
+    }
+
+    #the-best .flex > div {
+        width: 100%;
+    }
+
+    #testimonials-slider p {
+        font-size: 1.2rem;
+    }
+
+    #catalogue .container:before {
+        top: 2px;
+        font-size: 0.85rem;
+    }
+
+    #catalogue-slider a.slick-arrow {
+        font-size: 0.85rem;
+    }
+
+    #catalogue button.rounded {
+        width: 300px;
+    }
+
+    #services .flex > div {
+        width: 48%;
+    }
+
+    #contact .flex {
+        flex-wrap: wrap;
+    }
+
+    #form-container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 6rem 0;
+    }
+
+    footer .flex {
+        flex-wrap: wrap;
+    }
+
+    footer .flex > div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    footer .flex > div:first-child {
+        margin-top: 0;
+    }
+
+    footer .footer-about p {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    footer .footer-subscribe input {
+        width: 90%;
+    }
+
+    footer h5.follow-us {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #hero .hero-text {
+        width: 330px;
+    }
+
+    #agents {
+        margin: 4rem 0 3rem;
+        padding: 0 0 3rem;
+    }
+
+    #agents .card {
+        width: 100%;
+    }
+
+    #agents p.large-paragraph {
+        width: 100%;
+    }
+
+    #literatura-colombiana .flex {
+        display: block;
+    }
+
+    #literatura-colombiana .flex > div {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #catalogue button.rounded {
+        width: 250px;
+    }
+
+    #services {
+        padding: 4rem 0 3rem;
+        margin: 4rem 0;
+    }
+
+    #services .flex > div {
+        width: 100%;
+    }
+
+    #testimonials {
+        margin-bottom: 4rem;
+    }
+
+    #testimonials-slider p {
+        font-size: 1rem;
+    }
+
+    #testimonials-slider .slick-arrow {
+        display: none !important;
+    }
+
+    #contact {
+        padding: 4rem 0;
+    }
+
+    #contact h2 {
+        margin-bottom: 2rem;
+    }
+
+    #form-container {
+        padding: 1.5rem;
+    }
+
+    footer {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #hero .hero-text {
+        max-width: 275px;
+        width: 100%;
+    }
+    #catalogue button.rounded {
+        max-width: 250px;
+        width: 100%;
+    }
+    nav ul {
+    width: 200px;
+    }
+}

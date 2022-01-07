@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ElviraProject</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+
+    <link href="./Style.css" type="text/css" rel="Stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">Amazonas</a>
+                <nav>
+                    <button id="nav-toggle" class="icono-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Inicio</a></li>
+                        <li><a href="#">Libros</a></li>
+                        <li><a href="#">Escritoras</a></li>
+                        <li><a href="#">Apuesta</a></li>
+                        <li><a href="#">Convocatoria</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>¿Por qué leer mujeres escritoras?</h1>
+                <p>Lorem ipsum dolor sit amet consectectur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
+            </div>
+        </section>
+    </div>
+    <section id="literatura-colombiana">
+        <div class="container">
+            <h2>Literatura colombiana</h2>
+            <div class="flex">
+                <div>
+                    <span class="fas fa-home"></span>
+                    <h4>Pacífico</h4>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-book"></span>
+                    <h4>Caribe</h4>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-glasses"></span>
+                    <h4>Andina</h4>
+                    <p>Lorem ipsum dolor sit amet consectectur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="map-container">
+            <h1>Conoce las regiones</h1>
+            <select name="select-location" id="select-location">
+                <option value="-1">Selecciona una</option>
+                <option value="11.009754, -74.815274">Barranquilla</option>
+                <option value="12.19602,-72.147218">Cabo de la Vela-La Guajira</option>	
+                <option value="10.42278,-75.539217">Castillo San Felipe Cartagena-Bolivar</option>
+                <option value="2.265124,-73.794523">Caño Cristales-Meta</option>		
+            </select>
+        </div>
+        <div id="map"></div>
+    </section>
+
+
+    <section class="contact__container">
+        <div class="contacto__description">
+            <h1 class="contacto__title">Convocatoria</h1>
+            <p class="contacto__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Eaque officia atque assumenda tempora doloremque reprehenderit fugiat 
+            reiciendis libero dolorem similique.</p>               
+        </div>
+        <form action="" method="post" id="form">
+            <div class="contacto__form">
+                <h2 class="contacto__title">Déjanos tus datos</h2>
+                <div class="contacto__questions">
+                    <input type="text" name="" id="name"> <span class="contacto__questions--barra"></span>
+                    <label form=""> Nombre</label>
+                </div>
+                <div class="contacto__questions">
+                    <input type="email" name="" id="email"> <span class="contacto__questions--barra"></span>
+                    <label form="">Email</label>
+                </div>
+                <div class="contacto__questions">
+                    <input type="number" name="" id="number"> <span class="contacto__questions--barra"></span>
+                    <label>Edad</label>
+                </div>
+                <div>
+                    <button id="btn-form" class="rounded" type="submit">Enviar</button>
+                    <p class="respuesta" id="respuesta"></p>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    
+    <!-- <section class="cuestionario">
+    <div class="puntaje" id="puntaje"></div>
+    <div class="encabezado">
+        <div class="categoria" id="categoria">
+        </div>
+        <div class="numero" id="numero"></div>
+        <div class="pregunta" id="pregunta"></div>
+        <img src="#" class="imagen" id="imagen">
+    </div>
+    <div class="btn" id="btn1" onclick="oprimir_btn(0)" ></div>
+    <div class="btn" id="btn2" onclick="oprimir_btn(1)"></div>
+    <div class="btn" id="btn3" onclick="oprimir_btn(2)"></div>
+    <div class="btn" id="btn4" onclick="oprimir_btn(3)"></div>
+    </section> -->
+
+    
+    <section id="catalogue">
+        <div class="container">
+            <h2>Libros</h2>
+            <div id="catalogue-slider" class="slick">
+                <div>
+                    <img src="./Recursos/Img/Aguasdeestuario.png" alt="Libro Aguas de estuario 1" />
+                    <div class="catalogue-details">
+                        <p class="price">$42.000</p>
+                        <span class="writers">Velia Vidal</span>
+                        <span class="type">Novela</span>
+                        <span class="rgn">Chocó</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Recursos/Img/Cuentan.jpg" alt="Libro Antología Cuentos" />
+                    <div class="catalogue-details">
+                        <p class="price">$25,000</p>
+                        <span class="writers">Varias autoras</span>
+                        <span class="type">Cuentos</span>
+                        <span class="rgn">Colombia</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Recursos/Img/Endiciembrelleganlasbrisas.jpg" alt="Libro En diciembre llegan las brisas" />
+                    <div class="catalogue-details">
+                        <p class="price">$62,000</p>
+                        <span class="writers">Marvel Moreno</span>
+                        <span class="type">Novela</span>
+                        <span class="rgn">Barranquilla</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Recursos/Img/Hojas en mutación.jpg" alt="Libro Hojas en mutación" />
+                    <div class="catalogue-details">
+                        <p class="price">$20,000</p>
+                        <span class="writers">Nana Rodríguez Romero</span>
+                        <span class="type">Poemas</span>
+                        <span class="rgn">Tunja</span>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./Recursos/Img/De artes y oficios.jpg" alt="Libro Artes y oficios" />
+                    <div class="catalogue-details">
+                        <p class="price">$35,000</p>
+                        <span class="writers">Luz Mary Giraldo</span>
+                        <span class="type">Poemas</span>
+                        <span class="rgn">Ibagué</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="rounded">Conoce más</button>
+        </div>
+    </section>
+    <section id="agents">
+        <div class="container">
+            <h2>Escritoras</h2>
+            <p class="large-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+
+            <div class="flex">
+                <div class="card">
+                    <img src="./Recursos/Img/Pilar Quintana.jpg" alt="Escritoras 1" />
+                    <h3>Pilar Quintana</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./Recursos/Img/LuzMGiraldo.jpg" alt="Escritoras1" />
+                    <h3>Luz Mary Giraldo</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./Recursos/Img/Flor-Yolanda-Moreno.jpg" alt="Escritoras 1" />
+                    <h3>Flor Yolanda Moreno</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./Recursos/Img/Mary Grueso.jpg" alt="Escritoras 1" />
+                    <h3>Mary Grueso</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./Recursos/Img/MarvelMoreno.jpg" alt="Escritoras 1" />
+                    <h3>Marvel Moreno</h3>
+                </div>
+
+                <div class="card">
+                    <img src="./Recursos/Img/Velia Vidal.jpg" alt="Escritoras 1" />
+                    <h3>Velia Vidal</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="the-best">
+        <div class="flex container">
+            <img src="./Recursos/Img/Mujerleyendo.jpeg" alt="Mujer leyendo" />
+            <div>
+                <h2>¿Por qué hay que leer a más escritoras?</h2>
+                <p class="large-paragraph">Las mujeres han sido expuestas como la inspiración de un creador, pero nunca como creadoras. De esta forma las artistas han tenido que soportar la invisibilización de sus obras, lo que se ha visto representado en diversos premios. Por ejemplo, el Premio Nobel de Literatura desde su creación en 1901 hasta ahora ha premiado a 16 mujeres frente a 103 hombres...</p>
+                <button class="rounded">Más info</button>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials">
+        <div class="container">
+            <h2>Fragmentos</h2>
+            <div id="testimonials-slider">
+                <div>
+                    <blockquote>
+                        <p>""Si no hubiera reivindicado su derecho al placer habría vivido dichosa o al menos tranquila hasta su muerte. Y, sin embargo, aún ahora consideraba intolerable la insatisfacción, ese estado de letargo sexual al cual la condenaba el matrimonio con Luis. La libertad tenía un precio y ella lo estaba pagando, duramente, de la peor manera que habría imaginado, pero después las puertas del mundo se le abrirían de par en par""</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="./Recursos/Img/MarvelMoreno.jpg" alt="Marvel Moreno" />
+                        <p>El tiempo de las Amazonas de Marvel Moreno</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>"Ya sabes, soy justamente como el Pacífico. Tengo esa manía de estar en calma y de repente armar unas olas grandes y fuertes, que golpean y cambian al final el paisaje. Cosas que le pasan a la gente, los giros de la luna, o simplemente la vida, me han hecho tomar una decisión que a muchos les parece extraña, pero que para nosotros es casi obvia."</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="./Recursos/Img/Velia Vidal.jpg" alt="Velia Vidal" />
+                        <p>Aguas de estuario de Velia Vidal</p>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote>
+                        <p>“Yo no soy yo…
+                            soy mi comunidad,
+                            soy el Pacífico en todo su esplendor.
+                            Soy la tradición oral de mis ancestros
+                            que nos educaron de generación en generación,
+                            inculcándonos enseñanzas y valores
+                            para vivir en paz y en comunidad.”</p>
+                    </blockquote>
+                    <div class="testimonials-caption">
+                        <img src="./Recursos/Img/Mary Grueso.jpg" alt="Mary Grueso" />
+                        <p>No soy yo de Mary Grueso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>Amazonas</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+
+            <div class="footer-quick-links">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">Apuesta</a></li>
+                    <li><a href="#">Escritorias</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h5>Suscríbete a nuestro Newsletter</h5>
+                <div id="subscribe-container">
+                    <input type="text" placeholder="Enter Email" />
+                    <button class="right-rounded">Enviar</button>
+                </div>
+
+                <h5 class="follow-us">Síguenos</h5>
+                <ul>
+                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <small>
+            Copyright &copy; 2019 All rights reserved | This template is made with <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Colorlib</a>
+        </small>
+    </footer>
+    <script src="./funciones.js"></script>
+    <script src="./Jquery.js"></script>
+    <script src="./Eventos.JS"></script>
+    <script src="./Map.JS"></script>
+
+</body>
+</html>

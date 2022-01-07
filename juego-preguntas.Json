@@ -1,0 +1,50 @@
+[
+    {
+        "categoria": "Literatura Pacífico",
+        "pregunta": "¿Quién escribió Aguas de estuario?",
+        "respuesta": "Velia Vidal",
+        "incorrecta1": "Pilar Quintana",
+        "incorrecta2": "Margatira Robayo",
+        "incorrecta3": "Maria Teresa Ramírez",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Literatura Caribe",
+        "pregunta": "Fanny Buitrago escribió esta novela",
+        "respuesta": "El hostigante verano de los dioses",
+        "incorrecta1": "Prime persona",
+        "incorrecta2": "Sofoco",
+        "incorrecta3": "El color del espejo",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Literatura Andina",
+        "pregunta": "¿De dónde era Luz Mary Giraldo",
+        "respuesta": "Ibagué,Tolima",
+        "incorrecta1": "Medellin, Antioquia",
+        "incorrecta2": "Espinal, Tolima",
+        "incorrecta3": "Bogotá,D.C",
+        "imagen": "",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Literatura Pacífica",
+        "pregunta": "Conocida por La muñeca negra",
+        "respuesta": "Mary Grueso",
+        "incorrecta1": "Paula Moreno",
+        "incorrecta2": "Carolina Sanín",
+        "incorrecta3": "Vanessa Rosales",
+        "imagen": ""
+    },
+    {
+        "categoria": "Literatura Caribe",
+        "pregunta": "Escritora de poema \"Raíz Antigua\"",
+        "respuesta": "Meira del Mar",
+        "incorrecta1": "Flor Yolanda Moreno",
+        "incorrecta2": "Piedad Bonnet",
+        "incorrecta3": "Maria Mercedes Carranza",
+        "imagen": ""
+    }
+]
